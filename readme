@@ -1,0 +1,4 @@
+This software requires configuration before running, please run lsblk and enter just the partition into the partition variable in config.env
+The partition required should be like /dev/"sdb"
+
+When running the Mount_input_images script, comment out or remove the old cifs mount point in /etc/fstab and then reboot, otherwise it cant mount the directory.
